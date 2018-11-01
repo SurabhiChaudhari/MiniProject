@@ -15,6 +15,9 @@ class CreateCarControllersTable extends Migration
     {
         Schema::create('car_controllers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('Make');
+            $table->string('Model');
+            $table->string('Year');
             $table->timestamps();
         });
     }
