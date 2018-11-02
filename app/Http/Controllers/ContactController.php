@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     function contact() {
-        return view('pages.contact');
+        return view('Pages.contact');
     }
     function store(Request $request) {
         $name = $request->name;
@@ -12,6 +12,6 @@ class ContactController extends Controller
         return redirect()->route('thankyou',['name'=> $name]);
     }
     function thankyou($name,Request $request){
-        return view('pages.thankyou')-> with(compact('name'));
+        return view('Pages.thankyou')-> with(compact('name'));
     }
 }

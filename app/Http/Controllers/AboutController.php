@@ -4,6 +4,6 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     function about(){
-        return view('pages.about');
+        return view('Pages.about');
     }
 }
