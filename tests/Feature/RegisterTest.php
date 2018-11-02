@@ -27,4 +27,9 @@ class RegisterTest extends TestCase
         $response = $this->get('/about');
         $response->assertStatus(200);
     }
+    public function testContactPage()
+    {
+        $response = $this->get('/contact');
+        $response->assertStatus(200);
+    }
 }
